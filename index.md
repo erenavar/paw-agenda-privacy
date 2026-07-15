@@ -87,11 +87,18 @@ developer through the privacy contact above for privacy questions concerning Paw
 has no account system or developer-hosted user database, the developer cannot remotely identify or erase
 local reminder content from a user's device.
 
-## Children
+## Children And Families
 
-Paw Agenda is not designed for children and does not knowingly collect children's reminder content. Parents
-or guardians who believe a child has provided technical data through the update service may contact the
-developer using the privacy contact above.
+Paw Agenda is intended for users aged 9 and older, including children, teenagers, and adults. Children may
+use it to help manage pet-care responsibilities, preferably with guidance from a parent or guardian. The app
+does not create accounts, display ads, offer purchases, or enable communication between users. Children's
+pet profiles, selected photos, reminders, and notes remain encrypted on the device and are not sent to the
+developer.
+
+The limited technical data described in "App Updates And Technical Data" may be processed by Expo solely to
+deliver, secure, and measure app updates. Paw Agenda does not use this data for advertising, behavioral
+profiling, or cross-app tracking. A parent or guardian may contact the developer using the privacy contact
+above with questions about a child's use of Paw Agenda.
 
 ## Medical And Veterinary Disclaimer
 
