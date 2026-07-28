@@ -5,7 +5,7 @@ title: Paw Agenda Privacy Policy
 
 # Paw Agenda Privacy Policy
 
-Effective date: 15 July 2026
+Effective date: 28 July 2026
 
 Developer: Eren Avar
 
@@ -15,10 +15,11 @@ Public policy URL: [https://erenavar.github.io/paw-agenda-privacy/](https://eren
 
 ## Overview
 
-Paw Agenda is a local-first reminder application for pet care and everyday plans. It does not require an
-account and does not include advertising or product-behavior tracking SDKs. Reminder content is encrypted and stored
-on the user's device. This policy explains the limited technical data used to deliver app updates and
-the information that remains under the user's control on the device.
+Paw Agenda is a local-first reminder application for pet care and everyday plans. It does not require a
+Paw Agenda account and does not include advertising or product-behavior tracking SDKs. It offers an optional
+one-time Plus Lifetime in-app purchase, processed by the Apple App Store or Google Play. Reminder content is
+encrypted and stored on the user's device. This policy explains the limited technical data used to deliver app
+updates and the information that remains under the user’s control on the device.
 
 ## Information Stored Only On The Device
 
@@ -47,6 +48,19 @@ Backups are created only when the user requests them. They are encrypted with a 
 user. Paw Agenda does not store or recover that password. Export and import use the operating system's file
 picker or share sheet, so any destination selected by the user is governed by that destination's terms
 and privacy practices. Paw Agenda does not automatically upload backups.
+
+## Plus Lifetime Purchase
+
+Plus Lifetime is a personal, non-consumable in-app purchase. Apple or Google processes the payment, maintains
+the purchase history for the relevant store account, and handles the payment method. Paw Agenda does not ask for,
+receive, or store payment-card details. The app asks the relevant store on the device to confirm that the exact
+Plus Lifetime product belongs to the currently signed-in store account; it does not create a Paw Agenda user
+account or a developer-hosted purchase database.
+
+The purchase can be restored only on the purchaser's own devices using the same Apple ID or Google account.
+Encrypted backup files contain local records but do not carry a Plus entitlement. Family Sharing is not enabled
+for this product. Apple and Google each manage purchases in their own stores, so a purchase does not automatically
+move between those stores when a user changes platform.
 
 ## App Updates And Technical Data
 
@@ -91,9 +105,9 @@ local reminder content from a user's device.
 
 Paw Agenda is intended for users aged 9 and older, including children, teenagers, and adults. Children may
 use it to help manage pet-care responsibilities, preferably with guidance from a parent or guardian. The app
-does not create accounts, display ads, offer purchases, or enable communication between users. Children's
-pet profiles, selected photos, reminders, and notes remain encrypted on the device and are not sent to the
-developer.
+does not create accounts, display ads, or enable communication between users. Its optional one-time Plus
+Lifetime purchase is processed only by the platform's store payment flow. Children's pet profiles, selected
+photos, reminders, and notes remain encrypted on the device and are not sent to the developer.
 
 The limited technical data described in "App Updates And Technical Data" may be processed by Expo solely to
 deliver, secure, and measure app updates. Paw Agenda does not use this data for advertising, behavioral
