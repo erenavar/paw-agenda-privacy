@@ -5,7 +5,7 @@ title: Paw Agenda Privacy Policy
 
 # Paw Agenda Privacy Policy
 
-Effective date: 28 July 2026
+Effective date: 29 July 2026
 
 Developer: Eren Avar
 
@@ -29,6 +29,18 @@ mobile platforms, record content and selected photos are encrypted before being 
 database. The encryption key is held in the device's secure storage.
 
 The developer does not receive this content. Local processing is not collection by the developer.
+
+## Optional Plus Lifetime Purchase
+
+Paw Agenda offers an optional, one-time Plus Lifetime purchase. Plus Lifetime unlocks unlimited active
+reminders for each pet and all visual themes. It is a personal, non-consumable licence that can be restored
+on a new device with the same Apple Account or Google Play account used for the purchase. Family sharing is
+not enabled for the Apple product.
+
+Payment is processed by Apple or Google through their respective app stores. Paw Agenda does not receive or
+store payment-card information. To restore or unlock Plus Lifetime, the app checks the purchase entitlement
+provided by the applicable store on the device. Paw Agenda does not send pet profiles, reminders, notes,
+photos, or backup contents to either store for this purpose.
 
 ## Photos, Biometrics, And Notifications
 
@@ -106,8 +118,9 @@ local reminder content from a user's device.
 Paw Agenda is intended for users aged 9 and older, including children, teenagers, and adults. Children may
 use it to help manage pet-care responsibilities, preferably with guidance from a parent or guardian. The app
 does not create accounts, display ads, or enable communication between users. Its optional one-time Plus
-Lifetime purchase is processed only by the platform's store payment flow. Children's pet profiles, selected
-photos, reminders, and notes remain encrypted on the device and are not sent to the developer.
+Lifetime purchase is processed only by the platform's store payment flow and is not required to use the core
+pet-care reminder features. Children's pet profiles, selected photos, reminders, and notes remain encrypted
+on the device and are not sent to the developer.
 
 The limited technical data described in "App Updates And Technical Data" may be processed by Expo solely to
 deliver, secure, and measure app updates. Paw Agenda does not use this data for advertising, behavioral
