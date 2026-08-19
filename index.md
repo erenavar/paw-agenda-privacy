@@ -123,7 +123,7 @@ treatment, or emergency guidance. Users should consult a qualified veterinarian 
 
 ## Security
 
-Paw Agenda uses device-local encryption, secure key storage, optional app locking, screen-capture protection,
+Paw Agenda uses device-local encryption, secure key storage, optional app locking,
 private notification text, and encrypted backups. No system can guarantee absolute security, but Paw Agenda
 limits collection and access by design.
 
