@@ -5,7 +5,7 @@ title: Paw Agenda Privacy Policy
 
 # Paw Agenda Privacy Policy
 
-Effective date: 7 August 2026
+Effective date: 19 August 2026
 
 Developer: Eren Avar
 
@@ -19,8 +19,8 @@ Paw Agenda is a local-first reminder application for pet care and everyday plans
 Paw Agenda account and does not include advertising or product-behavior tracking SDKs. It offers optional paid
 Plus plans: monthly and yearly auto-renewing subscriptions, and a one-time Plus Lifetime purchase, processed
 by the Apple App Store or Google Play. Reminder content is encrypted and stored on the user's device. This
-policy explains the limited technical data used to deliver app updates and the information that remains under
-the user’s control on the device.
+policy explains the information that remains under the user’s control on the device and the operating-system
+services the app uses.
 
 ## Information Stored Only On The Device
 
@@ -79,32 +79,19 @@ Encrypted backup files contain local records but do not carry a Plus entitlement
 purchases in their own stores, so a purchase does not automatically move between those stores when a user
 changes platform.
 
-## App Updates And Technical Data
+## App Updates
 
-Paw Agenda uses Expo Application Services (EAS) Update to check for and deliver compatible app updates over
-HTTPS. Expo may process network information such as the IP address, device operating-system information,
-app/update version information, and a randomized installation token needed to decide which update to
-deliver and to operate staged rollouts. Expo may also process update download, installation and launch
-events, project usage statistics, technical errors, and update-service performance metrics to operate,
-secure, troubleshoot, and improve the service. This technical processing does not include Paw Agenda
-reminder titles, notes, pet names, selected pet photos, or backup contents.
-
-Paw Agenda uses Expo as a service provider for this update delivery. Its processing is described in the
-[Expo Privacy Policy](https://expo.dev/privacy).
+The current production version receives application-code updates only through the Apple App Store or Google
+Play. It does not activate Expo Application Services Update or another remote-code or over-the-air update
+service. Opening the app does not contact a Paw Agenda or Expo update server.
 
 ## Error Reports
 
-The current production configuration has no error-reporting endpoint and therefore sends no app-owned
-error reports. Paw Agenda contains a disabled-by-default privacy-safe reporting capability for a future
-release. It must not be activated in production until this policy and the applicable store Data Safety
-declaration are updated. Even when enabled, the report format excludes raw error messages, reminder
-content, pet names, notes, backup content, and record identifiers.
+The current production version has no error-reporting endpoint and sends no app-owned error reports.
 
 ## Sharing, Sale, And Advertising
 
 Paw Agenda does not sell personal data. It does not use personal data for advertising or cross-app tracking.
-The limited update-delivery data described above is processed by Expo to provide the update service and
-is not shared for Expo's independent advertising purposes by Paw Agenda.
 
 ## Retention And Deletion
 
@@ -113,10 +100,9 @@ vault, or removes the app. A secure wipe removes the local encrypted vault, sett
 schedules, and device-held vault key. Removing the app also removes its app-private local data, subject
 to operating-system behavior.
 
-Technical update-service data is retained by Expo according to Expo's retention practices. Contact the
-developer through the privacy contact above for privacy questions concerning Paw Agenda. Because Paw Agenda
-has no account system or developer-hosted user database, the developer cannot remotely identify or erase
-local reminder content from a user's device.
+Contact the developer through the privacy contact above for privacy questions concerning Paw Agenda. Because
+Paw Agenda has no account system or developer-hosted user database, the developer cannot remotely identify or
+erase local reminder content from a user's device.
 
 ## Children And Families
 
@@ -127,10 +113,8 @@ are processed only by the platform's store payment flow and are not required to 
 pet-care reminder features. Children's pet profiles, selected photos, reminders, and notes remain encrypted
 on the device and are not sent to the developer.
 
-The limited technical data described in "App Updates And Technical Data" may be processed by Expo solely to
-deliver, secure, and measure app updates. Paw Agenda does not use this data for advertising, behavioral
-profiling, or cross-app tracking. A parent or guardian may contact the developer using the privacy contact
-above with questions about a child's use of Paw Agenda.
+A parent or guardian may contact the developer using the privacy contact above with questions about a child's
+use of Paw Agenda.
 
 ## Medical And Veterinary Disclaimer
 
@@ -139,9 +123,9 @@ treatment, or emergency guidance. Users should consult a qualified veterinarian 
 
 ## Security
 
-Paw Agenda uses device-local encryption, secure key storage, HTTPS update transport, optional app locking,
-screen-capture protection, private notification text, and encrypted backups. No system can guarantee
-absolute security, but Paw Agenda limits collection and access by design.
+Paw Agenda uses device-local encryption, secure key storage, optional app locking, screen-capture protection,
+private notification text, and encrypted backups. No system can guarantee absolute security, but Paw Agenda
+limits collection and access by design.
 
 ## Changes To This Policy
 
