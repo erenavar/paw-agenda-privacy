@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Download Paw Agenda for iPhone or Android."
+    />
+    <meta name="theme-color" content="#113d4b" />
+    <title>Download Paw Agenda</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #143b43;
+        --muted: #527174;
+        --canvas: #f8f3e9;
+        --surface: rgba(255, 255, 255, 0.88);
+        --mint: #86d8c9;
+        --mint-deep: #337e78;
+        --orange: #ff9b43;
+        --line: rgba(20, 59, 67, 0.12);
+        --shadow: 0 24px 70px rgba(15, 50, 60, 0.16);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-width: 320px;
+        min-height: 100vh;
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 5% 12%, rgba(134, 216, 201, 0.58) 0 9%, transparent 9.2%),
+          radial-gradient(circle at 94% 82%, rgba(255, 155, 67, 0.46) 0 10%, transparent 10.2%),
+          linear-gradient(135deg, #f9f5ed 0%, #efe7da 100%);
+        font-family: ui-rounded, "Avenir Next", Avenir, "Nunito Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      main {
+        width: min(100%, 520px);
+        min-height: 100vh;
+        margin: 0 auto;
+        padding: max(28px, env(safe-area-inset-top)) 24px max(28px, env(safe-area-inset-bottom));
+        display: grid;
+        place-items: center;
+      }
+
+      .card {
+        width: 100%;
+        padding: clamp(28px, 8vw, 44px);
+        overflow: hidden;
+        text-align: center;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 36px;
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(12px);
+      }
+
+      .icon-wrap {
+        width: 116px;
+        height: 116px;
+        margin: 0 auto 24px;
+        padding: 8px;
+        border-radius: 30px;
+        background: #fff;
+        box-shadow: 0 12px 28px rgba(20, 59, 67, 0.14);
+      }
+
+      .icon-wrap img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 23px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 12px;
+        color: var(--mint-deep);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        width: 8px;
+        height: 8px;
+        content: "";
+        border-radius: 50%;
+        background: var(--orange);
+        box-shadow: 0 0 0 5px rgba(255, 155, 67, 0.16);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.25rem, 10vw, 3.5rem);
+        line-height: 0.96;
+        letter-spacing: -0.065em;
+      }
+
+      .lead {
+        max-width: 330px;
+        margin: 18px auto 30px;
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.55;
+      }
+
+      .store-links {
+        display: grid;
+        gap: 12px;
+      }
+
+      .store-link {
+        min-height: 70px;
+        padding: 12px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 13px;
+        color: #fff;
+        text-decoration: none;
+        border: 0;
+        border-radius: 20px;
+        box-shadow: 0 9px 18px rgba(20, 59, 67, 0.16);
+        transition: transform 160ms ease, box-shadow 160ms ease;
+      }
+
+      .store-link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 13px 24px rgba(20, 59, 67, 0.22);
+      }
+
+      .store-link:focus-visible {
+        outline: 4px solid rgba(255, 155, 67, 0.52);
+        outline-offset: 3px;
+      }
+
+      .store-link.apple {
+        background: #173d44;
+      }
+
+      .store-link.google {
+        color: #123e3d;
+        background: var(--mint);
+      }
+
+      .store-mark {
+        width: 30px;
+        height: 30px;
+        display: grid;
+        flex: 0 0 auto;
+        place-items: center;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+      }
+
+      .google .store-mark {
+        font-size: 1.2rem;
+      }
+
+      .store-copy {
+        display: grid;
+        text-align: left;
+        line-height: 1.1;
+      }
+
+      .store-copy small {
+        margin-bottom: 3px;
+        font-size: 0.69rem;
+        font-weight: 700;
+        opacity: 0.78;
+      }
+
+      .store-copy strong {
+        font-size: 1.08rem;
+      }
+
+      .note {
+        margin: 23px 0 0;
+        color: var(--muted);
+        font-size: 0.83rem;
+        line-height: 1.5;
+      }
+
+      .privacy {
+        display: inline-block;
+        margin-top: 18px;
+        color: var(--mint-deep);
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-underline-offset: 3px;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .store-link {
+          transition: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="card" aria-labelledby="page-title">
+        <div class="icon-wrap">
+          <img src="assets/paw-agenda-icon.png" alt="Paw Agenda app icon" />
+        </div>
+        <p class="eyebrow">Available now</p>
+        <h1 id="page-title">Paw Agenda</h1>
+        <p class="lead">All your pet care, beautifully organized in one place.</p>
+
+        <nav class="store-links" aria-label="Download Paw Agenda">
+          <a class="store-link apple" href="https://apps.apple.com/app/id6795640132">
+            <span class="store-mark" aria-hidden="true">iOS</span>
+            <span class="store-copy">
+              <small>Download on the</small>
+              <strong>App Store</strong>
+            </span>
+          </a>
+          <a class="store-link google" href="https://play.google.com/store/apps/details?id=com.eren.takip">
+            <span class="store-mark" aria-hidden="true">▶</span>
+            <span class="store-copy">
+              <small>Get it on</small>
+              <strong>Google Play</strong>
+            </span>
+          </a>
+        </nav>
+
+        <p class="note">Choose your preferred store to download Paw Agenda.</p>
+        <a class="privacy" href="../">Privacy Policy</a>
+      </section>
+    </main>
+  </body>
+</html>
