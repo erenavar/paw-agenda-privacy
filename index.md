@@ -5,9 +5,9 @@ title: Paw Agenda Privacy Policy
 
 # Paw Agenda Privacy Policy
 
-Effective date: 2026-11-03
+Effective date: 2026-11-17
 
-Scope: local pet-care records and optional features in Paw Agenda 1.2.0, 1.2.1 and 1.2.2 for iOS and Android. Where the versions differ, this policy names the version each statement applies to; a statement made "from" a version also applies to the later versions covered here. Optional Firebase Analytics is part of the 1.2.0 native binaries on both platforms; previously published versions do not acquire it through this policy or a server setting.
+Scope: local pet-care records and optional features in Paw Agenda 1.2.0, 1.2.1, 1.2.2 and 1.2.3 for iOS and Android. Where the versions differ, this policy names the version each statement applies to; a statement made "from" a version also applies to the later versions covered here. Optional Firebase Analytics is part of the 1.2.0 native binaries on both platforms; previously published versions do not acquire it through this policy or a server setting.
 
 Developer: Eren Avar
 
@@ -86,7 +86,7 @@ In version 1.2.0, the preview is free and sharing the locally generated PDF requ
 
 A Plus owner may create an in-app routine list for one caregiver. The feature uses two Google services as processors for this purpose only: Firebase Authentication and Cloud Firestore. When the owner starts a share or a caregiver accepts one, Firebase Authentication creates an anonymous technical identifier on that installation without requesting an email address, phone number or social-login profile. Nothing is sent to these services until a user opens the caregiver-sharing flow. From version 1.2.2, caregiver notifications also use Expo's push service, as described under Caregiver Notifications below.
 
-In versions 1.2.0 and 1.2.1, the shared content is limited to the pet name and the titles, categories, planned dates and planned times of the owner's current routine-care tasks (at most 50). From version 1.2.2, the owner chooses a care period when starting the share: a start date and an end date up to 30 days later, which the owner can extend. The shared list then contains the pet name and the routine-care occurrences from the previous day to up to 14 days ahead within that period (at most 400 tasks). If the owner turns on medications, the list also contains the title, planned dates and times and note of the pet's medication reminders; the note is shared as the owner wrote it, often with the dose, and Paw Agenda does not suggest, calculate or check doses. The list also carries the caregiver's marks (done, given, skipped with an optional short note from the caregiver, or postponed to a later time) and, while caregiver notifications are active, the owner's push address described below. The shared content is encrypted end to end with AES-256-GCM in the app before upload. The encryption key is never written to the server: it travels only inside the owner-created invite link or QR code and is held in the owner's and caregiver's device secure storage. Users should send the invite only to a trusted caregiver. Health-passport records, documents, photos, period-calendar records, contacts, local backups and local-vault keys are not included in any version. In versions 1.2.0 and 1.2.1, free-form notes and medication-administration history are not included either; from version 1.2.2, the only free-form text is the medication notes and caregiver notes described above, and medication history from before the shared window is not included.
+In versions 1.2.0 and 1.2.1, the shared content is limited to the pet name and the titles, categories, planned dates and planned times of the owner's current routine-care tasks (at most 50). From version 1.2.2, the owner chooses a care period when starting the share: a start date and an end date up to 30 days later, which the owner can extend. The shared list then contains the pet name and the routine-care occurrences from the previous day to up to 14 days ahead within that period (at most 400 tasks). If the owner turns on medications, the list also contains the title, planned dates and times and note of the pet's medication reminders; the note is shared as the owner wrote it, often with the dose, and Paw Agenda does not suggest, calculate or check doses. The list also carries the caregiver's marks (done, given, skipped with a short note from the caregiver (optional in version 1.2.2; from version 1.2.3 the caregiver must give a short reason, which the owner sees), or postponed to a later time) and, while caregiver notifications are active, the owner's push address described below. The shared content is encrypted end to end with AES-256-GCM in the app before upload. The encryption key is never written to the server: it travels only inside the owner-created invite link or QR code and is held in the owner's and caregiver's device secure storage. Users should send the invite only to a trusted caregiver. Health-passport records, documents, photos, period-calendar records, contacts, local backups and local-vault keys are not included in any version. In versions 1.2.0 and 1.2.1, free-form notes and medication-administration history are not included either; from version 1.2.2, the only free-form text is the medication notes and caregiver notes described above, and medication history from before the shared window is not included.
 
 The server holds only what is needed to run the share: the encrypted content and its revision number; random share and invitation identifiers; a random local pet-record identifier; the anonymous identifiers of the owner, the accepted caregiver and the last writer; the share and invitation status; the invitation expiry; and creation, acceptance and update times. Firebase Authentication keeps the anonymous account record (identifier and sign-in times). Google also processes technical request data, such as IP addresses, to provide these services. Firestore data is stored in Google Cloud's European multi-region location. The anonymous sharing identifier is never assigned as an Analytics user ID.
 
@@ -146,6 +146,45 @@ Paw Agenda does not sell personal data, display advertisements or track users ac
 Local records remain until the user deletes them or wipes the vault. A vault wipe removes encrypted records, the device-held vault key and reminder schedules, resets preferences, cleans archive temporary files and replaces the widget count with a generic shortcut. The operating system controls rendered widget images and app removal behavior. The app's normal export cleanup runs when the sharing flow returns; it cannot guarantee that cleanup completes if the process or device stops during an export. Temporary files may remain in the app's cache until cleaned or removed by the operating system.
 
 Paw Agenda has no registered account system or developer-hosted readable pet-record database, so the developer cannot remotely identify or erase records on a user's device. Deletion requests for data held by Google services are handled by email: Analytics data by app instance ID, as described above, and caregiver-sharing records as described in the Live Caregiver Sharing section. Push addresses and caregiver notifications are handled by Expo and the platform push services as described under Caregiver Notifications. Firebase installation records are deleted as described in the Analytics section: from version 1.2.1 the app asks Google to delete the record when measurement permission ends, and otherwise Google deletes it after the inactivity period. Google Play Billing Library diagnostics carry no identifier available to the developer and are handled by Google, as described under Optional Plus Plans And Payments. A live-share owner can end the caregiver's access from the app at any time. If a user emails the privacy contact, the developer receives the message and information the user chooses to include through that email service. Users should include only information needed for their request.
+
+## Legal Reasons For Processing
+
+The developer named at the top of this policy is the data controller. Most Paw Agenda data stays on the user's device and never reaches the developer. Where personal data is processed through an online service, the legal reason is:
+
+- Optional Analytics and installation measurement: the user's explicit consent, given through the 18+ declaration and the separate permission step. Consent can be withdrawn at any time in Settings → Privacy & Data → Optional measurement.
+- Live caregiver sharing and caregiver notifications: performing the service the owner starts and the caregiver accepts. The owner can end it at any time.
+- Plus purchases and purchase checks: performing the purchase contract and meeting the platform stores' requirements. Apple or Google is the seller and processes payment.
+- Google Play Billing Library diagnostics on Android: the legitimate interest in offering store purchases through the mandatory Google Play library.
+- Emails sent to the privacy contact: answering the request, and meeting legal obligations where they apply.
+
+## Processing Outside Your Country
+
+Paw Agenda has no developer-operated server. The online features use these providers, which can process data outside the user's country, including outside Türkiye:
+
+- Google Firebase (Google Ireland Limited and Google LLC): encrypted caregiver-share records and the anonymous technical account are stored in Google's European Union multi-region. Google may also process technical data in the United States and other countries.
+- Google Analytics for Firebase, only after the consent described above: processed by Google, including in the United States.
+- Expo (650 Industries, Inc., United States) and the Apple and Google push services: deliver the end-to-end encrypted caregiver notifications and handle the push address.
+- Apple and Google stores: process purchases under their own terms.
+- GitHub Pages (GitHub, Inc., United States): hosts this policy and the invite page. Opening them sends the usual web request data, such as the IP address, to GitHub.
+
+Analytics is sent abroad only with the user's explicit consent. Caregiver sharing and notifications are sent only when the owner starts a share and the caregiver accepts it, and their content is encrypted so that the providers and the developer cannot read it. The providers apply their own transfer safeguards, such as standard contractual clauses, described in their terms.
+
+## Your Rights
+
+Depending on where you live, data-protection law gives you rights over your personal data. These include the rights under Article 11 of the Turkish Personal Data Protection Law No. 6698 (KVKK), the EU and UK General Data Protection Regulations and similar laws:
+
+- to learn whether your personal data is processed, and to request information about it;
+- to learn the purpose of the processing and whether the data is used for that purpose;
+- to know the third parties, in your country or abroad, to whom the data is transferred;
+- to have incomplete or inaccurate data corrected;
+- to have data deleted or destroyed, and to have these corrections and deletions notified to third parties who received the data;
+- to object to a result against you that arises from analysis solely by automated systems;
+- to claim compensation if you suffer damage from unlawful processing;
+- to withdraw consent at any time, without affecting earlier processing.
+
+To use these rights, email the privacy contact at the top of this policy. No fee is charged. The developer answers within 30 days. Because Paw Agenda has no account system, include the identifiers described in this policy (the Analytics app instance IDs, or the date and time of a caregiver share) so that the records can be found. Records kept only on your device are under your control: you can view, correct, export or delete them in the app.
+
+If you are not satisfied with the answer, you can complain to your data-protection authority. In Türkiye this is the Personal Data Protection Authority (Kişisel Verileri Koruma Kurumu); in the EU or UK it is your local supervisory authority.
 
 ## App Updates And Error Reports
 
